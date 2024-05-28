@@ -59,3 +59,33 @@ class HelloWorld {
       
     }
 }
+
+//For a given matrix of N x M, print its transpose.
+
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value of n:");
+        int n = sc.nextInt();
+        System.out.println("Enter value of m:");
+        int m = sc.nextInt();
+        
+        int matrix [][] = new int[n][m];
+        
+        for(int i=0; i<n; i++){
+             for(int j=0; j<m; j++){
+                 matrix[i][j]= sc.nextInt();
+            }
+        }
+       for(int i=0; i<m; i++){
+           for(int j=0; j<n; j++){
+               System.out.print(matrix[j][i]);
+           }
+           System.out.println();
+       }
+       
+      
+    }
+}
