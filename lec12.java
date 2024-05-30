@@ -1,4 +1,4 @@
-//Take an array of Strings input from the user & find the cumulative (combined) length of all those strings.
+//1)Take an array of Strings input from the user & find the cumulative (combined) length of all those strings.
 import java.util.*;
 class HelloWorld {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ class HelloWorld {
     }
 }
 
-// input a string from the user. Create a new string called ‘result’ in which you will replace the letter ‘e’ in the original string with letter ‘i’. 
+//2) input a string from the user. Create a new string called ‘result’ in which you will replace the letter ‘e’ in the original string with letter ‘i’. 
 // Example : 
 // original = “eabcdef’ ; result = “iabcdif”
 // Original = “xyz” ; result = “xyz”
@@ -35,6 +35,29 @@ class HelloWorld {
           }
       }
       System.out.println(result);
+   
+    }
+}
+
+
+// 3)Input an email from the user. You have to create a username from the email by deleting the part that comes after ‘@’. Display that username to the user.
+// Example : 
+// email = “helloWorld123@gmail.com”; username = “helloWorld123”
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Email:");
+      String email = sc.next();
+       String username = "";
+      for(int i=0;i<email.length();i++){
+          if(email.charAt(i) == '@'){
+            break;
+          }else{
+              username += email.charAt(i);
+          }
+      }
+      System.out.println("Username is: "+username);
    
     }
 }
