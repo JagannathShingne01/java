@@ -77,3 +77,19 @@ class HelloWorld {
    
     }
 }
+// same question using String Builder method lec-13
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       String email = sc.next();
+       StringBuilder sb = new StringBuilder(email);
+       for(int i=0;i<sb.length();i++){
+           if(sb.charAt(i)=='@'){
+               sb.delete(i, sb.length());
+           }
+       }
+       System.out.println(sb);
+       
+    }
+}
