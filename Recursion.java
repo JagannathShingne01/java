@@ -30,3 +30,30 @@ class Recursion {
     func(word, word.length()-1);
     }
 }
+
+//Find The First And Last occurance of element in String.
+class Recursion {
+    public static int first = -1; // constat at every level of recursion
+    public static int last = -1;
+    
+    public static void func(int idx, String src, char element){
+        if(src.length() == idx){
+            System.out.println(first);
+            System.out.println(last);
+            return;
+        }
+        char currChar = src.charAt(idx);
+        if(currChar == element){
+            if(first == -1){
+                first = idx;
+            }else{
+                last=idx;
+            }
+        }
+        func(idx+1, src, element);
+    }
+    public static void main(String[] args) {
+        String src = "ashhaajjsansoa";
+       func(0, src ,'a');
+    }
+}
