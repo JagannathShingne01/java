@@ -1,7 +1,7 @@
-https://leetcode.com/problems/missing-number/
-
-268. Missing Number
-nums = [9,6,4,2,3,5,7,0,1]
+//https://leetcode.com/problems/missing-number/
+//Cycle Sort
+//268. Missing Number
+//nums = [9,6,4,2,3,5,7,0,1]
 class Solution {
     public int missingNumber(int[] nums) {
         int i = 0;
